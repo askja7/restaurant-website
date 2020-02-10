@@ -64,18 +64,6 @@ body.home {
     margin-top: 25vh;
 }
 
-/**
-.main-img {
-    width: 80%;
-    border-radius: 6px;
-    margin: 3em;
-    box-shadow: 0 2px 7px rgba(0, 0, 9, 1);
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-}
-**/
-
 /**PAGES**/
 
 h1 {
@@ -117,11 +105,11 @@ h3.dish-name {
     color: #343434;
 }
 
+
 /**BUTTON READ MORE**/
 / button {
     color: hotpink;
 }
-
 
 
 /**PAGES GENERAL**/
@@ -131,8 +119,6 @@ body {
     margin: 0;
     align-content: center;
 }
-
-
 
 p {
     display: block;
@@ -145,8 +131,6 @@ p {
     color: #343434;
 }
 
-
-
 img {
     width: 100%;
     height: auto;
@@ -157,17 +141,6 @@ img {
     margin-bottom: 1em;
     border-radius: .1rem;
 }
-
-img.portfolio-images {
-    width: 100%;
-    height: auto;
-    align-content: center;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    border-radius: 6px;
-}
-
 
 .title {
     font-size: 17px;
@@ -201,7 +174,6 @@ article {
     margin-left: auto;
     margin-right: auto;
 }
-
 
 article {
     display: flex;
@@ -237,17 +209,6 @@ article {
 
 
 /**ABOUT PAGE**/
-
-img.about-image {
-    width: 20vw;
-    align-content: center;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    border-radius: 6px;
-}
-
-
 .about-title {
     display: block;
     margin-left: auto;
@@ -259,7 +220,16 @@ img.about-image {
     color: #f9a630;
 }
 
-/**ABOUT PAGE LINES**/
+img.portfolio-images {
+    width: 100%;
+    height: auto;
+    align-content: center;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 6px;
+}
+
 hr.style1 {
     border-top: 3px solid #f9a630;
     width: 500px;
@@ -281,7 +251,7 @@ hr.style1 {
 }
 
 
-/**COLLAPSABLE MENU BUTTONS**/
+/**CATEGORY DISHES MENU BUTTONS**/
 
 .collapsible {
     margin-left: auto;
@@ -337,8 +307,14 @@ width: 60%;
 }
 
 .meal .price-discount + .price-full:before {
-    content: "only ";
+    content: "Now for ";
 }
+
+/**SHORT DESCRIPTION**/
+.description {
+    margin-bottom: 1em;
+}
+
 
 
 
