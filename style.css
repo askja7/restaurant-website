@@ -63,6 +63,7 @@ body.home {
     align-content: center;
     margin-top: 25vh;
 }
+
 /**
 .main-img {
     width: 80%;
@@ -116,10 +117,9 @@ h3.dish-name {
     color: #343434;
 }
 
-/**BUTTON READ MORE**//
-
-button {
-color: hotpink;
+/**BUTTON READ MORE**/
+/ button {
+    color: hotpink;
 }
 
 
@@ -180,48 +180,35 @@ img.portfolio-images {
 
 
 /**GRID FOR THE MENU**/
-
-/**
-*,
-*:before,
-*:after {
-    box-sizing: border-box;
+/* CSS that applies to browsers that support grid */
+main {
+    max-width: none;
+    margin: 0;
 }
-**/
 
+article {
+    margin: 0;
+}
 
-    /* CSS that applies to browsers that support grid */
-    main {
-        max-width: none;
-        margin: 0;
-    }
-
-    article {
-        margin: 0;
-    }
-
-    .menu-page section {
-        display: grid;
-        grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
-        /* Keep adding new columns - even if theres is no content for them. content does not alwys take up full width */
-        /*grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));*/
-        /* Don't add more columns than theres is content for. && +content "always" take full width */
-        grid-gap: 3rem;
-        padding: 3rem;
-        margin-left: auto;
-        margin-right: auto;
-    }
+.menu-page section {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    /* Keep adding new columns - even if theres is no content for them. content does not alwys take up full width */
+    /*grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));*/
+    /* Don't add more columns than theres is content for. && +content "always" take full width */
+    grid-gap: 3rem;
+    padding: 3rem;
+    margin-left: auto;
+    margin-right: auto;
+}
 
 
 article {
     display: flex;
     flex-flow: column;
     margin-bottom: .05rem;
-        margin-top: .05rem;
-    
+    margin-top: .05rem;
 }
-
-
 
 /* has a default of stretched - we don't do that on images - remember: max-width: 100%; height: auto */
 
@@ -238,11 +225,11 @@ article > p {
 article {
     /**box-shadow: 0 2px 5px rgba(0, 0, 6, 1);
     border-radius: 1rem;**/
-    
-    border: 1px solid rgba(255,255,255,0.20);
-border-radius:6px;
-    box-shadow: -6px -6px 26px 0 rgba(255,255,255,0.83);
-box-shadow: 6px 6px 16px 0 rgba(217,210,200,0.51);
+
+    border: 1px solid rgba(255, 255, 255, 0.20);
+    border-radius: 6px;
+    box-shadow: -6px -6px 26px 0 rgba(255, 255, 255, 0.83);
+    box-shadow: 6px 6px 16px 0 rgba(217, 210, 200, 0.51);
 }
 
 
@@ -271,6 +258,7 @@ img.about-image {
     margin-bottom: 40px;
     color: #f9a630;
 }
+
 /**ABOUT PAGE LINES**/
 hr.style1 {
     border-top: 3px solid #f9a630;
@@ -303,19 +291,19 @@ hr.style1 {
     display: block;
     background-color: #f9a630;
     border-radius: 5px;
-  color: white;
-  cursor: pointer;
-  padding: 18px;
-  width: 100%;
-  border: none;
-  text-align: center;
-  outline: none;
-  font-size: 16px;
+    color: white;
+    cursor: pointer;
+    padding: 18px;
+    width: 100%;
+    border: none;
+    text-align: center;
+    outline: none;
+    font-size: 16px;
     grid-column: 1/-1;
-    border: 1px solid rgba(255,255,255,0.20);
-border-radius:6px;
-    box-shadow: -6px -6px 26px 0 rgba(255,255,255,0.83);
-box-shadow: 6px 6px 16px 0 rgba(217,210,200,0.51);
+    border: 1px solid rgba(255, 255, 255, 0.20);
+    border-radius: 6px;
+    box-shadow: -6px -6px 26px 0 rgba(255, 255, 255, 0.83);
+    box-shadow: 6px 6px 16px 0 rgba(217, 210, 200, 0.51);
 }
 
 /**.active, .collapsible:hover {
@@ -329,6 +317,28 @@ box-shadow: 6px 6px 16px 0 rgba(217,210,200,0.51);
   background-color: #f1f1f1;
 width: 60%;
 } **/
+
+
+/**MEAL PRICE**/
+/ .meal .price {
+    position: absolute;
+    right: -4px;
+    bottom: -4px;
+    background: var(--color-white);
+    margin: 0;
+    padding: 0.5rem 1rem;
+    box-shadow: 1px 1px 1px 1px var(--color-grey-dark);
+}
+
+.meal .price-discount {
+    right: initial;
+    text-decoration: line-through;
+    left: -4px;
+}
+
+.meal .price-discount + .price-full:before {
+    content: "only ";
+}
 
 
 
@@ -382,6 +392,7 @@ footer {
     img.portfolio-images {
         max-width: 800px;
     }
+
     .menu-page section {
         max-width: 800px;
     }
@@ -412,7 +423,7 @@ footer {
     }
 
     .column {
-      padding: 0;
+        padding: 0;
     }
 
     .row {
@@ -441,7 +452,7 @@ footer {
     }**/
 
 
-    
+
     header {
         display: flex;
         flex-direction: column;
@@ -497,6 +508,6 @@ footer {
 
     .collapsible {
 
-    margin-top: 50px;
+        margin-top: 50px;
 
-}
+    }
