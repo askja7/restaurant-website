@@ -107,10 +107,23 @@ h3.dish-name {
 
 
 /**BUTTON READ MORE**/
-/ button {
-    color: hotpink;
+button.read-more {
+    color: #343434;
+    background-color: #f4f7f6;
+    border: none;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+    font-size: .8em;
+    margin: 0.25em 1rem .1rem;
+    text-align: left;
+    padding: 0;
+    display: block;
+    /**display: inline-block;**/
 }
-
+button.read-more:hover,
+button.read-more:focus {
+    color: #f9a630;
+}
 
 /**PAGES GENERAL**/
 body {
@@ -315,12 +328,6 @@ width: 60%;
     width: 20px;
     height: auto;
 }
-
-/**SHORT DESCRIPTION**/
-.description {
-    margin-bottom: 1em;
-}
-
 
 
 
