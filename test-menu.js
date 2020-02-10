@@ -29,15 +29,15 @@ function showSingleDish(dish) {
     copy.querySelector(".description span").textContent = dish.shortdescription;
     copy.querySelector(".price span").textContent = dish.price;
     //copy.querySelector(".region span").textContent = dish.region;
-    
+
     //importing images from database
     const base = "https://kea-alt-del.dk/t5/site/imgs/";
     const smallImg = base + "small/" + dish.image + "-sm.jpg";
-    
+
     console.log(smallImg)
-    
+
     copy.querySelector("img").setAttribute('src', smallImg)
-    
+
   //append somewhere
 
   const whoIsYourDaddy = document.querySelector("#starters")

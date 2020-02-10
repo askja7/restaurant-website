@@ -141,17 +141,9 @@ h3.dish-name {
 
 /**BUTTON READ MORE**//
 
-.why   {display: block;
-  margin-top: auto;
-  border: none;
-  width: 100%;
-  padding: 1rem;
-  color: var(--color-grey-lightest);
-  font-size: var(--font-size-base);
-  background: var(--color-blue-base);
-  transition: all 0.4s;
-  box-shadow: 2px 2px 0px 0px transparent;
-    position: relative; }
+button {
+color: hotpink;
+}
 
 body {
     font-family: "Open Sans", sans-serif;
@@ -330,7 +322,7 @@ hr.style1 {
 .collapsible {
     margin-left: auto;
     margin-right: auto;
-    margin-top: 3em;
+    margin-top: 1em;
     margin-bottom: 20px;
     display: block;
     background-color: #f9a630;
