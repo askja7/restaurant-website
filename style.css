@@ -310,6 +310,12 @@ width: 60%;
     content: "Now for ";
 }
 
+/**SOLD OUT STAMP**/
+.meal img.soldout {
+    width: 20px;
+    height: auto;
+}
+
 /**SHORT DESCRIPTION**/
 .description {
     margin-bottom: 1em;

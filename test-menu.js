@@ -42,6 +42,20 @@ function showSingleDish(dish) {
     copy.querySelector(".price-full span").textContent = dish.price
   }
 
+//dish sold out picture
+
+    /*
+    const soldout = "images/four-categories/outerglow/SVG/sold-out.svg";
+
+    if(dish.soldout) {
+        copy.querySelector(".soldout").setAttribute("images/four-categories/outerglow/SVG/sold-out.svg", soldout)
+    }else {
+        copy.querySelector(".soldout").remove()
+    }
+    */
+
+    //....
+
 
     //copy.querySelector(".region span").textContent = dish.region;
 
