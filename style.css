@@ -1,0 +1,534 @@
+/**NAVIGATION**/
+
+header {
+    background-color: #f4f7f6;
+    max-width: 100%;
+    margin: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+
+header ul {
+    align-self: flex-end;
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+header li {
+    display: inline;
+}
+
+header li a {
+    display: inline-block;
+    color: #343434;
+    text-align: center;
+    font-family: 'Monserrat', sans-serif;
+    font-weight: bold;
+    padding: 20px;
+    text-decoration: none;
+}
+
+.active {
+    border-bottom: 3px solid #f9a630;
+}
+
+header img {
+    display: flex;
+    align-self: flex-start;
+    margin-top: 5px;
+    margin-left: 10px;
+    margin-right: 6vw;
+    height: 12vh;
+    width: auto;
+    padding: 10px;
+}
+
+
+
+/**HOME PAGE BACKGROUND**/
+
+
+body.home {
+    background-image: url(images/hermes-rivera-VdEw9Mfz6I4-unsplash.jpg);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+.home-pg-title {
+    font-family: 'Playfair Display', serif;
+    color: #fff;
+    font-size: 10vh;
+    align-content: center;
+    margin-top: 25vh;
+}
+
+
+
+
+/**MENU PAGE**/
+
+/**.column {
+    flex: 50%;
+    padding: 1em;
+}
+
+.row {
+    display: flex;
+    width: 70%;
+    align-content: center;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 3em;
+    margin-bottom: 3em;
+} **/
+
+.main-img {
+    width: 80%;
+    border-radius: 6px;
+    margin: 3em;
+    box-shadow: 0 2px 7px rgba(0, 0, 9, 1);
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+/**PAGES**/
+
+h1 {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    font-family: 'Libre Baskerville', serif;
+    margin-top: 70px;
+    margin-bottom: 40px;
+    color: #f9a630;
+}
+
+h2 {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    font-family: 'Libre Baskerville', serif;
+    margin-top: 40px;
+    margin-bottom: 40px;
+    color: #f9a630;
+}
+
+h3 {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    font-size: 18px;
+    font-family: 'Libre Baskerville', serif;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    color: #f9a630;
+    max-width: 700px;
+}
+
+h3.dish-name {
+    color: #343434;
+}
+
+/**BUTTON READ MORE**//
+
+.why   {display: block;
+  margin-top: auto;
+  border: none;
+  width: 100%;
+  padding: 1rem;
+  color: var(--color-grey-lightest);
+  font-size: var(--font-size-base);
+  background: var(--color-blue-base);
+  transition: all 0.4s;
+  box-shadow: 2px 2px 0px 0px transparent;
+    position: relative; }
+
+body {
+    font-family: "Open Sans", sans-serif;
+    background-color: #f4f7f6;
+    margin: 0;
+    align-content: center;
+}
+
+
+
+
+
+
+/**GRID FOR THE MENU**/
+
+/**
+*,
+*:before,
+*:after {
+    box-sizing: border-box;
+}
+**/
+
+
+    /* CSS that applies to browsers that support grid */
+    main {
+        max-width: none;
+        margin: 0;
+    }
+
+    article {
+        margin: 0;
+    }
+
+    .menu-page section {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+        /* Keep adding new columns - even if theres is no content for them. content does not alwys take up full width */
+        /*grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));*/
+        /* Don't add more columns than theres is content for. && +content "always" take full width */
+        grid-gap: 3rem;
+        padding: 3rem;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+
+article {
+    display: flex;
+    flex-flow: column;
+    margin-bottom: .05rem;
+        margin-top: .05rem;
+    
+}
+
+
+
+/* has a default of stretched - we don't do that on images - remember: max-width: 100%; height: auto */
+
+article {
+    padding: 1rem;
+}
+
+
+article > p {
+    margin: 0.25em 1rem .1rem;
+}
+
+
+article {
+    /**box-shadow: 0 2px 5px rgba(0, 0, 6, 1);
+    border-radius: 1rem;**/
+    
+    border: 1px solid rgba(255,255,255,0.20);
+border-radius:6px;
+    box-shadow: -6px -6px 26px 0 rgba(255,255,255,0.83);
+box-shadow: 6px 6px 16px 0 rgba(217,210,200,0.51);
+}
+
+
+
+
+
+
+
+
+
+
+
+p {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 700px;
+    text-align: left;
+    font-size: 16px;
+    font-family: 'Montserrat', sans-serif;
+    color: #343434;
+}
+
+
+
+img {
+    width: 100%;
+    height: auto;
+    align-content: center;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 1em;
+    border-radius: .1rem;
+}
+
+img.portfolio-images {
+    width: 100%;
+    height: auto;
+    align-content: center;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 6px;
+}
+
+
+.title {
+    font-size: 17px;
+    font-family: 'Libre Baskerville', serif;
+    color: #f9a630;
+}
+
+
+img.about-image {
+    width: 20vw;
+    align-content: center;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 6px;
+}
+
+
+.about-title {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    font-family: 'Libre Baskerville', serif;
+    margin-top: 70px;
+    margin-bottom: 40px;
+    color: #f9a630;
+}
+
+
+/**BACK ARROW**/
+
+.back-arrow {
+    width: 50px;
+    display: block;
+    align-content: center;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 2em;
+    margin-bottom: 2em;
+}
+
+/**ABOUT PAGE LINES**/
+hr.style1 {
+    border-top: 3px solid #f9a630;
+    width: 500px;
+    margin-top: 2em;
+    margin-bottom: 1em;
+}
+
+/**COLLAPSABLE MENU BUTTONS**/
+
+.collapsible {
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 3em;
+    margin-bottom: 20px;
+    display: block;
+    background-color: #f9a630;
+    border-radius: 5px;
+  color: white;
+  cursor: pointer;
+  padding: 18px;
+  width: 100%;
+  border: none;
+  text-align: center;
+  outline: none;
+  font-size: 16px;
+    grid-column: 1/-1;
+    border: 1px solid rgba(255,255,255,0.20);
+border-radius:6px;
+    box-shadow: -6px -6px 26px 0 rgba(255,255,255,0.83);
+box-shadow: 6px 6px 16px 0 rgba(217,210,200,0.51);
+}
+
+/**.active, .collapsible:hover {
+  background-color: #555; 
+}
+
+.content {
+  padding: 0 18px;
+  display: none;
+  overflow: hidden;
+  background-color: #f1f1f1;
+width: 60%;
+} **/
+
+
+
+/*GRID OVERALL LAYOUT*/
+
+/**GRID NAMES**/
+
+header {
+    grid-area: header;
+}
+
+main {
+    grid-area: main;
+}
+
+aside {
+    grid-area: aside;
+}
+
+footer {
+    grid-area: footer;
+}
+
+
+
+/**GRID MEDIA**/
+@media only screen and (min-width: 900px) {
+    body {
+        display: grid;
+        grid-template-columns: 1fr 2fr 1fr;
+        grid-template-areas:
+            "header header header"
+            "main main main"
+            "footer footer footer";
+    }
+
+
+    p {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        max-width: 700px;
+        text-align: left;
+        font-size: 16px;
+    }
+
+    h1 {
+        max-width: 650px;
+    }
+
+    img.portfolio-images {
+        max-width: 800px;
+    }
+    .menu-page section {
+        max-width: 800px;
+    }
+}
+
+
+@media only screen and (max-width: 899px) {
+    body {
+        display: grid;
+        grid-template-columns: 10px 1fr 10px;
+        grid-template-areas:
+            "header header header"
+            ". main ."
+            "footer footer footer";
+    }
+
+    p {
+        font-size: 14px;
+    }
+
+    main {
+        margin-left: 2em;
+        margin-right: 2em;
+    }
+
+    img.portfolio-images {
+        width: 80%;
+    }
+
+    .column {
+      padding: 0;
+    }
+
+    .row {
+        display: block;
+    }
+
+}
+
+
+@media only screen and (max-width: 599px) {
+    body {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-areas:
+            "header"
+            "main"
+            "footer";
+    }
+
+
+    /**header img {
+     display: flex;
+    align-self: flex-start;
+    height: 35px;
+     margin-left: 0;
+    }**/
+
+
+    
+    header {
+        display: flex;
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+    header ul {
+        align-self: stretch;
+
+    }
+
+    header li {
+        display: grid;
+    }
+
+    header li a {
+        padding: 10px;
+        display: table-header-group;
+
+    }
+
+    header img {
+        display: none;
+    }
+
+    hr.style1 {
+        width: 300px;
+    }
+
+
+
+    main {
+        margin-left: 2em;
+        margin-right: 2em;
+    }
+
+    img.portfolio-images {
+        width: 80%;
+    }
+
+    img.about-image {
+        width: 40vw;
+    }
+
+    .column {
+        padding: 0;
+
+    }
+
+    .row {
+        display: block;
+    }
+
+    .collapsible {
+
+    margin-top: 50px;
+
+}
