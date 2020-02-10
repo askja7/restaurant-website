@@ -1,5 +1,4 @@
 /**NAVIGATION**/
-
 header {
     background-color: #f4f7f6;
     max-width: 100%;
@@ -49,8 +48,6 @@ header img {
 
 
 /**HOME PAGE BACKGROUND**/
-
-
 body.home {
     background-image: url(images/hermes-rivera-VdEw9Mfz6I4-unsplash.jpg);
     background-repeat: no-repeat;
@@ -66,27 +63,7 @@ body.home {
     align-content: center;
     margin-top: 25vh;
 }
-
-
-
-
-/**MENU PAGE**/
-
-/**.column {
-    flex: 50%;
-    padding: 1em;
-}
-
-.row {
-    display: flex;
-    width: 70%;
-    align-content: center;
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: 3em;
-    margin-bottom: 3em;
-} **/
-
+/**
 .main-img {
     width: 80%;
     border-radius: 6px;
@@ -96,7 +73,7 @@ body.home {
     margin-left: auto;
     margin-right: auto;
 }
-
+**/
 
 /**PAGES**/
 
@@ -145,6 +122,9 @@ button {
 color: hotpink;
 }
 
+
+
+/**PAGES GENERAL**/
 body {
     font-family: "Open Sans", sans-serif;
     background-color: #f4f7f6;
@@ -152,6 +132,48 @@ body {
     align-content: center;
 }
 
+
+
+p {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 700px;
+    text-align: left;
+    font-size: 16px;
+    font-family: 'Montserrat', sans-serif;
+    color: #343434;
+}
+
+
+
+img {
+    width: 100%;
+    height: auto;
+    align-content: center;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 1em;
+    border-radius: .1rem;
+}
+
+img.portfolio-images {
+    width: 100%;
+    height: auto;
+    align-content: center;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 6px;
+}
+
+
+.title {
+    font-size: 17px;
+    font-family: 'Libre Baskerville', serif;
+    color: #f9a630;
+}
 
 
 
@@ -227,53 +249,7 @@ box-shadow: 6px 6px 16px 0 rgba(217,210,200,0.51);
 
 
 
-
-
-
-
-
-
-p {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    max-width: 700px;
-    text-align: left;
-    font-size: 16px;
-    font-family: 'Montserrat', sans-serif;
-    color: #343434;
-}
-
-
-
-img {
-    width: 100%;
-    height: auto;
-    align-content: center;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    margin-bottom: 1em;
-    border-radius: .1rem;
-}
-
-img.portfolio-images {
-    width: 100%;
-    height: auto;
-    align-content: center;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    border-radius: 6px;
-}
-
-
-.title {
-    font-size: 17px;
-    font-family: 'Libre Baskerville', serif;
-    color: #f9a630;
-}
-
+/**ABOUT PAGE**/
 
 img.about-image {
     width: 20vw;
@@ -295,6 +271,13 @@ img.about-image {
     margin-bottom: 40px;
     color: #f9a630;
 }
+/**ABOUT PAGE LINES**/
+hr.style1 {
+    border-top: 3px solid #f9a630;
+    width: 500px;
+    margin-top: 2em;
+    margin-bottom: 1em;
+}
 
 
 /**BACK ARROW**/
@@ -309,13 +292,6 @@ img.about-image {
     margin-bottom: 2em;
 }
 
-/**ABOUT PAGE LINES**/
-hr.style1 {
-    border-top: 3px solid #f9a630;
-    width: 500px;
-    margin-top: 2em;
-    margin-bottom: 1em;
-}
 
 /**COLLAPSABLE MENU BUTTONS**/
 
