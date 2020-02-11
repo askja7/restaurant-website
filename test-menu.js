@@ -12,6 +12,38 @@ function stickyNav() {
 }
 */
 
+/*
+1.fetch categories
+2. create sections
+
+<section id="starters">
+        <button type="button" class="collapsible">STARTERS</button>
+<section>
+3. assign id
+4. assign products to categories
+
+*/
+fetch("https://kea-alt-del.dk/t5/api/categories")
+.then(res=>res.json())
+.then(createCategories)
+
+function createCategories(data) {
+    console.log(data)
+    data.forEach(function(showCategory){
+        
+        const section = document.createElement("section");
+        section.id=showCategory;
+        const button = document.createElement("button.collapsible");
+        button.textContent=showCategory;
+        console.log(button)
+        section.appendChild(button);
+        
+        document.querySelector("main.menu-page").appendChild(section);
+    })
+    getProducts();
+}
+
+function getProducts() {
 fetch("https://kea-alt-del.dk/t5/api/productlist")
   .then(function (response) {
     return response.json()
@@ -20,7 +52,7 @@ fetch("https://kea-alt-del.dk/t5/api/productlist")
     showData(data)
 
   })
-
+}
 function showData(jsonData) {
   //console.log(jsonData)
   //[].forEach
@@ -28,6 +60,7 @@ function showData(jsonData) {
   //1 make a template
 
   //2 loop though jsonData
+    console.log(jsonData)
   jsonData.forEach(showSingleDish)
 }
 
@@ -81,8 +114,14 @@ function showSingleDish(dish) {
 
     copy.querySelector("img").setAttribute('src', smallImg)
 
-  //append somewhere
+  
 
-  const whoIsYourDaddy = document.querySelector("#starters")
-  whoIsYourDaddy.appendChild(copy)
+    console.log(`#${dish.category}`)
+    document.querySelector(`#${dish.category}`).appendChild(copy);
+    //append somewhere
+  /*const whoIsYourDaddy = document.querySelector("#starters")
+  whoIsYourDaddy.appendChild(copy) */
 }
+
+
+//categories
