@@ -33,7 +33,8 @@ function createCategories(data) {
         
         const section = document.createElement("section");
         section.id=showCategory;
-        const button = document.createElement("button.collapsible");
+        const button = document.createElement("button");
+        button.classList.add('collapsible')
         button.textContent=showCategory;
         console.log(button)
         section.appendChild(button);

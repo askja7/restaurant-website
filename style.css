@@ -301,6 +301,7 @@ hr.style1 {
     padding: 18px;
     width: 100%;
     border: none;
+    text-transform: uppercase;
     text-align: center;
     outline: none;
     font-size: 16px;
