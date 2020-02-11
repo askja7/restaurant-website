@@ -92,15 +92,25 @@ function showSingleDish(dish) {
 
 //dish sold out picture
 
-    /*
-    const soldout = "images/four-categories/outerglow/SVG/sold-out.svg";
 
-    if(dish.soldout) {
-        copy.querySelector(".soldout").setAttribute("images/four-categories/outerglow/SVG/sold-out.svg", soldout)
-    }else {
-        copy.querySelector(".soldout").remove()
+   // const soldout = "images/four-categories/outerglow/SVG/sold-out.svg";
+
+    if(!dish.soldout) {
+        copy.querySelector("img[alt=soldout]").remove()
     }
-    */
+
+    if(!dish.vegetarian) {
+        copy.querySelector("img[alt=vegetarian]").remove()
+    }
+
+    if(!dish.alcohol) {
+        copy.querySelector("img[alt=alcohol]").remove()
+    }
+
+    if(!dish.discount) {
+        copy.querySelector("img[alt=discount]").remove()
+    }
+
 
     //....
 

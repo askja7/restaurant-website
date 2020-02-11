@@ -134,7 +134,7 @@ button.read-more {
     font-family: 'Montserrat', sans-serif;
     font-weight: bold;
     font-size: .8em;
-    margin: 0.25em 1rem .1rem;
+   /** margin: 0.25em 1rem .1rem;**//
     text-align: left;
     padding: 0;
     display: block;
@@ -345,14 +345,53 @@ width: 60%;
 .meal .price-discount + .price-full:before {
     content: "Now for ";
 }
+.img-holder1, .img-holder2 {
+    position:relative;
+    /**border:4px solid hotpink;**/
+    }
+
 
 /**SOLD OUT STAMP**/
-.meal img.soldout {
-    width: 20px;
+.meal img[alt=soldout] {
+    width: 100%;
     height: auto;
+    height: auto;
+    display: block;
+     position:absolute;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+    /** border:2px solid yellow;**/
+}
+
+.meal img[alt=alcohol] {
+    width: 6rem;
+    height: auto;
+    position: absolute;
+    top:0;
+    right: 0;
 }
 
 
+.meal img[alt=discount] {
+    width: 5rem;
+    height: auto;
+    position: absolute;
+    top:0;
+    left: 0;
+    margin-left: 4rem;
+    margin-top: .5rem;
+}
+
+.meal img[alt=vegetarian] {
+    width: 6rem;
+    height: auto;
+    position: absolute;
+    top:0;
+    left: 0;
+}
 
 /*GRID OVERALL LAYOUT*/
 
