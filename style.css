@@ -30,16 +30,36 @@ header li a {
     text-decoration: none;
 }
 
-.active {
-    border-bottom: 3px solid #f9a630;
+header a:hover,
+header a:focus {
+    color: #7f7f7f;
 }
 
+.active {
+    border-bottom: 3px solid #f9a630;
+    color: #7f7f7f;
+}
+/**
+main {
+  padding: 16px;
+}
+
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+.sticky + main {
+  padding-top: 60px;
+}
+**/
 header img {
     display: flex;
     align-self: flex-start;
     margin-top: 5px;
     margin-left: 10px;
     margin-right: 6vw;
+    margin-bottom: 0;
     height: 12vh;
     width: auto;
     padding: 10px;
@@ -122,7 +142,7 @@ button.read-more {
 }
 button.read-more:hover,
 button.read-more:focus {
-    color: #f9a630;
+    color: #7f7f7f;
 }
 
 /**PAGES GENERAL**/

@@ -1,3 +1,17 @@
+/*window.onscroll = function() {stickyNav()};
+
+var navbar = document.getElementById("navbar");
+var sticky = navbar.offsetTop;
+
+function stickyNav() {
+  if (window.pageYOffset >= sticky) {
+    navbar.classList.add("sticky")
+  } else {
+    navbar.classList.remove("sticky");
+  }
+}
+*/
+
 fetch("https://kea-alt-del.dk/t5/api/productlist")
   .then(function (response) {
     return response.json()
