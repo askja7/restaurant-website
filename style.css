@@ -399,15 +399,66 @@ width: 60%;
     margin-top: .5rem;
 }
 
-/*.meal img[alt=vegetarian] {
-    width: 6rem;
+/*MODAL*/
+
+.hide {
+  display: none;
+}
+.modal-background {
+  position: fixed;
+  z-index: 10;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.7);
+}
+.modal-content {
+  background-color: #fefefe;
+    width:60%;
     height: auto;
+  border: 1px solid #7c1f17;
+  margin: 1em;
+  padding: 2em;
     position: absolute;
-    top:0;
-    left: 0;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
 }
 
-GRID OVERALL LAYOUT*/
+/*MODAL IMAGES*/
+
+img.modal-image {
+    width: 20rem;
+    height: auto;
+    align-content: center;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 6px;
+}
+/*MODAL VEG*/
+.modal-content img[alt=modal-vegetarian] {
+    width: 6rem;
+    height: auto;
+
+}
+
+/*MODAL PRICE*/
+
+
+
+.modal-price.price-discount {
+    right: initial;
+    text-decoration: line-through;
+    left: -4px;
+}
+
+.modal-price.price-discount + .price-full:before {
+    content: "Now for ";
+}
+
+/*GRID OVERALL LAYOUT*/
 
 /**GRID NAMES**/
 

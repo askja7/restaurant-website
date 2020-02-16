@@ -12,6 +12,19 @@ function stickyNav() {
 }
 */
 
+
+
+//modal FIRST
+//close the modal when clicked
+const modal = document.querySelector(".modal-background");
+modal.addEventListener("click", () => {
+  modal.classList.add("hide");
+});
+//modal FIRST end
+
+
+
+
 /*
 1.fetch categories
 2. create sections
@@ -139,7 +152,15 @@ function showSingleDish(dish) {
 
     copy.querySelector("img").setAttribute('src', smallImg)
 
-  
+//modal SECOND
+    copy.querySelector("button").addEventListener("click", () => {
+        console.log("click", dish)
+    fetch(`https://kea-alt-del.dk/t5/api/product?id=${dish.id}`)
+      .then(res => res.json())
+      .then(showDetails);
+  });
+//modal SECOND end
+
 
     console.log(`#${dish.category}`)
     document.querySelector(`#${dish.category}`).appendChild(copy);
@@ -149,4 +170,44 @@ function showSingleDish(dish) {
 }
 
 
+//modal THIRD
+function showDetails(data) {
+    console.log(data)
+  modal.querySelector(".modal-name").textContent = data.name;
+  modal.querySelector(".modal-description").textContent = data.longdescription;
+  modal.querySelector(".modal-region").textContent = data.region;
+    //images modal
+    const base = "https://kea-alt-del.dk/t5/site/imgs/";
+    const smallImg = base + "small/" + data.image + "-sm.jpg";
+    console.log(smallImg)
+    modal.querySelector(".modal-image").setAttribute('src', smallImg)
+
+   // if(!data.vegetarian) {
+   //     copy.querySelector("img[alt=modal-vegetarian]").remove()
+  //  }
+
+    //price modal
+    modal.querySelector(".modal-price span").textContent = data.price;
+ if (data.discount) { //on sale
+    modal.querySelector(".price-discount span").textContent = data.price;
+    const newPrice = Math.round(data.price - data.price * data.discount / 100);
+
+    modal.querySelector(".price-full span").textContent = newPrice;
+    //calculate new price
+    //49-49*10/100
+    //dish.price-dish.price*price.discount/100
+  } else { // not on discount
+   //modal.querySelector(".price-discount").remove()
+    modal.querySelector(".price-full span").textContent = data.price;
+  }
+
+
+  //...
+  modal.classList.remove("hide");
+}
+//modal THIRD end
+
 //categories
+
+
+
