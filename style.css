@@ -145,6 +145,8 @@ button.read-more:focus {
     color: #7f7f7f;
 }
 
+
+
 /**PAGES GENERAL**/
 body {
     font-family: "Open Sans", sans-serif;
@@ -350,6 +352,13 @@ width: 60%;
     /**border:4px solid hotpink;**/
     }
 
+/**CONTAINS ALCOHOL**/
+.alcohol {
+    color: #343434;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+    font-size: .8em;
+}
 
 /**SOLD OUT STAMP**/
 .meal img[alt=soldout] {
@@ -366,6 +375,11 @@ width: 60%;
     /** border:2px solid yellow;**/
 }
 
+.meal img[alt=vegetarian] {
+    width: 6rem;
+    height: auto;
+    margin-left: 0;
+}
 .meal img[alt=alcohol] {
     width: 6rem;
     height: auto;
@@ -385,7 +399,7 @@ width: 60%;
     margin-top: .5rem;
 }
 
-.meal img[alt=vegetarian] {
+/*.meal img[alt=vegetarian] {
     width: 6rem;
     height: auto;
     position: absolute;
@@ -393,7 +407,7 @@ width: 60%;
     left: 0;
 }
 
-/*GRID OVERALL LAYOUT*/
+GRID OVERALL LAYOUT*/
 
 /**GRID NAMES**/
 

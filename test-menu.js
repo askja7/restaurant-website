@@ -76,6 +76,7 @@ function showSingleDish(dish) {
   copy.querySelector("h3.dish-name").textContent = dish.name;
     copy.querySelector(".description span").textContent = dish.shortdescription;
     copy.querySelector(".price span").textContent = dish.price;
+    copy.querySelector(".alcohol span").textContent = dish.alcohol;
     //calculating price
     if (dish.discount) { //on sale
     copy.querySelector(".price-discount span").textContent = dish.price;
@@ -88,6 +89,19 @@ function showSingleDish(dish) {
   } else { // not on discount
     copy.querySelector(".price-discount").remove()
     copy.querySelector(".price-full span").textContent = dish.price
+  }
+
+    //alcohol
+   if (dish.alcohol) {
+    copy.querySelector(".alcohol span").textContent = dish.alcohol;
+    const containsAlcohol = Math.round(dish.alcohol - dish.alcohol/ 100);
+
+    copy.querySelector(".alcohol span").textContent = containsAlcohol;
+    //calculate alcohol
+    //49-49/100
+    //dish.alcohol-dish.alcohol*/100
+  } else { // not on discount
+    copy.querySelector(".alcohol").remove()
   }
 
 //dish sold out picture
@@ -103,9 +117,9 @@ function showSingleDish(dish) {
         copy.querySelector("img[alt=vegetarian]").remove()
     }
 
-    if(!dish.alcohol) {
-        copy.querySelector("img[alt=alcohol]").remove()
-    }
+   // if(!dish.alcohol) {
+    //    copy.querySelector("img[alt=alcohol]").remove()
+   // }
 
     if(!dish.discount) {
         copy.querySelector("img[alt=discount]").remove()
